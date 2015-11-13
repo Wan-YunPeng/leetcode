@@ -1,0 +1,86 @@
+﻿生成启动时间为 2015/11/4 22:33:57。
+     1>项目“E:\vc++\leetcode\Subsets2_11_4\Subsets2_11_4\Subsets2_11_4.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\visual studio 12.0\vc\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 d:\visual studio 12.0\vc\include\xutility(2113) : 参见“std::_Copy_impl”的声明
+                 e:\vc++\leetcode\subsets2_11_4\subsets2_11_4\main.cpp(66): 参见对正在编译的函数 模板 实例化“_OutIt std::copy<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::vector<int,std::allocator<_Ty>>>>>,std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>(_InIt,_InIt,_OutIt)”的引用
+                 with
+                 [
+                     _OutIt=std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>
+         ,            _Ty=int
+         ,            _InIt=std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::vector<int,std::allocator<int>>>>>
+                 ]
+     1>d:\visual studio 12.0\vc\include\xutility(371): error C2039: “iterator_category”: 不是“std::vector<std::vector<int,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>”的成员
+                 with
+                 [
+                     _Ty=int
+                 ]
+                 d:\visual studio 12.0\vc\include\xutility(2117): 参见对正在编译的类 模板 实例化“std::iterator_traits<_OutIt>”的引用
+                 with
+                 [
+                     _OutIt=std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>
+                 ]
+                 d:\visual studio 12.0\vc\include\xutility(2132): 参见对正在编译的函数 模板 实例化“_OutIt std::_Copy_impl<std::_Tree_unchecked_const_iterator<_Mytree,std::_Iterator_base0>,_OutIt>(_InIt,_InIt,_OutIt,std::false_type)”的引用
+                 with
+                 [
+                     _OutIt=std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>
+         ,            _Mytree=std::_Tree_val<std::_Tree_simple_types<std::vector<int,std::allocator<int>>>>
+         ,            _InIt=std::_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::vector<int,std::allocator<int>>>>,std::_Iterator_base0>
+                 ]
+                 e:\vc++\leetcode\subsets2_11_4\subsets2_11_4\main.cpp(66): 参见对正在编译的函数 模板 实例化“_OutIt std::copy<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::vector<int,std::allocator<_Ty>>>>>,std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>(_InIt,_InIt,_OutIt)”的引用
+                 with
+                 [
+                     _OutIt=std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>
+         ,            _Ty=int
+         ,            _InIt=std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::vector<int,std::allocator<int>>>>>
+                 ]
+     1>d:\visual studio 12.0\vc\include\xutility(371): error C2146: 语法错误: 缺少“;”(在标识符“iterator_category”的前面)
+     1>d:\visual studio 12.0\vc\include\xutility(371): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>d:\visual studio 12.0\vc\include\xutility(371): error C2602: “std::iterator_traits<_OutIt>::iterator_category”不是“std::iterator_traits<_OutIt>”基类的成员
+                 with
+                 [
+                     _OutIt=std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>
+                 ]
+                 d:\visual studio 12.0\vc\include\xutility(371) : 参见“std::iterator_traits<_OutIt>::iterator_category”的声明
+                 with
+                 [
+                     _OutIt=std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>
+                 ]
+     1>d:\visual studio 12.0\vc\include\xutility(371): error C2868: “std::iterator_traits<_OutIt>::iterator_category”: 非法的 using 声明语法；应输入限定名
+                 with
+                 [
+                     _OutIt=std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>
+                 ]
+     1>d:\visual studio 12.0\vc\include\xutility(2117): error C2665: “std::_Copy_impl”: 2 个重载中没有一个可以转换所有参数类型
+                 d:\visual studio 12.0\vc\include\xutility(2092): 可能是“_OutIt std::_Copy_impl<_InIt,_OutIt>(_InIt,_InIt,_OutIt,std::random_access_iterator_tag,std::random_access_iterator_tag)”
+                 with
+                 [
+                     _OutIt=std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>
+         ,            _InIt=std::_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::vector<int,std::allocator<int>>>>,std::_Iterator_base0>
+                 ]
+                 d:\visual studio 12.0\vc\include\xutility(2083): 或       “_OutIt std::_Copy_impl<_InIt,_OutIt>(_InIt,_InIt,_OutIt,std::input_iterator_tag,std::_Mutable_iterator_tag)”
+                 with
+                 [
+                     _OutIt=std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>
+         ,            _InIt=std::_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::vector<int,std::allocator<int>>>>,std::_Iterator_base0>
+                 ]
+                 尝试匹配参数列表“(std::_Tree_unchecked_const_iterator<_Mytree,std::_Iterator_base0>, std::_Tree_unchecked_const_iterator<_Mytree,std::_Iterator_base0>, std::vector<std::vector<int,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>, std::bidirectional_iterator_tag, int)”时
+                 with
+                 [
+                     _Mytree=std::_Tree_val<std::_Tree_simple_types<std::vector<int,std::allocator<int>>>>
+                 ]
+                 and
+                 [
+                     _Mytree=std::_Tree_val<std::_Tree_simple_types<std::vector<int,std::allocator<int>>>>
+                 ]
+                 and
+                 [
+                     _Ty=int
+                 ]
+     1>已完成生成项目“E:\vc++\leetcode\Subsets2_11_4\Subsets2_11_4\Subsets2_11_4.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.56
